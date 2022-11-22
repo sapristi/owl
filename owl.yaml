@@ -1,13 +1,14 @@
 units:
-  kx: cx
-  ky: cy
+  kx: 19
+  ky: 19
   px: 2
   py: 2
+  decalage: 8
 points:
   key:
     footprints:
-      choc_hotswap:
-        type: choc
+      mx_hotswap:
+        type: mx
         nets:
           from: =column_net
           to: GND
@@ -15,8 +16,8 @@ points:
             keycaps: true
             reverse: true
             hotswap: true
-      choc:
-        type: choc
+      mx:
+        type: mx
         anchor:
           rotate: 180
         nets:
@@ -148,6 +149,14 @@ outlines:
           - ref: matrix_pinky_home
           - ref: matrix_inner_bottom
             shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
+    pinky_side:
+      main:
+        type: rectangle
+        anchor:
+          ref: matrix_inner_home
+          shift: [-5kx, -3kx-1]
+        size: [3kx, 4kx]
+        corner: 10
     controller_area:
       main:
         type: rectangle
@@ -155,7 +164,7 @@ outlines:
           ref:
             - matrix_inner_top
           shift: [0 kx, -4.05 ky]
-        size: [30, 76.5]
+        size: [30+decalage, 86.5]
         corner: px
     base_outline:
       main:
@@ -169,6 +178,10 @@ outlines:
       controller_area:
         type: outline
         name: controller_area
+        operation: add
+      pinky_side:
+        type: outline
+        name: pinky_side
         operation: add
     pcb:
       main:
@@ -188,12 +201,11 @@ outlines:
         operation: subtract
 
 pcbs:
-  board:
+  owl_generated:
     outlines:
       edge:
         outline: pcb
         layer: Edge.Cuts
-        # TODO there's a way to add stuff to the silkscreen layer
     footprints:
       mcu_l:
         type: promicro
@@ -210,7 +222,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [28, 0]
+          shift: [28 + decalage, 0]
           rotate: 270
         params:
           side: F
@@ -222,7 +234,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [28, 0]
+          shift: [28+ decalage, 0]
           rotate: 270
         params:
           side: B
@@ -230,11 +242,11 @@ pcbs:
           from: Braw
           to: Bplus
       jst_bat:
-        type: pad
+        type: bat
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [20, -17.5]
+          shift: [20 + decalage, -17.5]
         params:
           reverse: true
         nets:
@@ -245,31 +257,54 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [27.5, -14]
+          shift: [27.5+decalage, -14]
           rotate: 270
         params:
           variant: 2_pin_th
         nets:
           from: GND
           to: RST
-      info_l:
-        type: text
+      pad_1:
+        type: mounting_pad
         anchor:
           ref:
-            - thumbfan_near_thumb
-          shift: [ -1.1 kx, 0]
-          rotate: 15
+            - matrix_inner_bottom
+          shift: [35, -25]
+        nets:
+          net: GND
         params:
-          text: "rae-dux v0.1\\nby ajrae"
-          justify: left
-      info_r:
-        type: text
+          holeD: 3.2
+
+      pad_2:
+        type: mounting_pad
         anchor:
           ref:
-            - thumbfan_near_thumb
-          shift: [ -1.1 kx, 0]
-          rotate: 15
+            - matrix_inner_top
+          shift: [35, 0]
+        nets:
+          net: GND
         params:
-          layer: B.SilkS
-          text: "rae-dux v0.1\\nby ajrae"
-          justify: right mirror
+          holeD: 3.2
+
+      pad_3:
+        type: mounting_pad
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [-4.6 kx,  -15 ]
+          rotate: -17
+        nets:
+          net: GND
+        params:
+          holeD: 3.2
+      pad_4:
+        type: mounting_pad
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [-4.6 kx, -3ky ]
+          rotate: -17
+        nets:
+          net: GND
+        params:
+          holeD: 3.2

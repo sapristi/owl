@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 36,
+    "active_layer": 0,
     "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -66,7 +66,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "board-routed_rounded.kicad_prl",
+    "filename": "owl_mx_bottom_plate.kicad_prl",
     "version": 3
   },
   "project": {
