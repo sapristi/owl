@@ -137,7 +137,7 @@
     (fp_line (start 7 6) (end 7 7) (layer "Dwgs.User") (width 0.15) (tstamp b0e528a2-a723-4c8f-ba37-beaa0f8b0f50))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (width 0.15) (tstamp e5c9aed9-6691-450d-942e-99a0b3c143b9))
     (fp_line (start -7 7) (end -6 7) (layer "Dwgs.User") (width 0.15) (tstamp f54901b5-a5dc-45da-8a45-335a9ce2d48a))
-    (fp_rect (start -7 -7) (end 7 7) (layer "Edge.Cuts") (width 0.12) (fill none) (tstamp a84cfe77-76d8-4068-b48e-4c966dfe77e7))
+    (fp_rect (start -7 -7) (end 7 7) (layer "Edge.Cuts") (width 0.2) (fill none) (tstamp a84cfe77-76d8-4068-b48e-4c966dfe77e7))
   )
 
   (footprint "SMDPad" (layer "F.Cu")

@@ -1,4 +1,5 @@
-node_modules
-/output/outlines/
-/output/pcbs/board-backups/
-/output/pcbs/fp-info-cache
+kicad/jlcpcb/production_files/*
+kicad/jlcpcb/gerber/
+kicad/jlcpcb/*.db
+kicad/fp-info-cache
+!production_files/*.zip
