@@ -4,7 +4,7 @@
 
 The Owl is a 36-key (diodeless!), MX-spaced, wireless keyboard.
 
-It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux](Architeuthis_Dux) ).
+It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [Architeuthis Dux](https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux) ).
 
 The main difference with the rae-dux is that MX-spacing is used for the keys. This keyboard is also designed with top and bottom plates, so as to protect the MCU and the battery.
 
@@ -18,11 +18,11 @@ The art for the keyboard is from vecteezy.com:
 
 ## Firmware
 
-Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware for it, see the [https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux](rae-dux ZMK shield).
+Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware for it, see the [rae-dux ZMK shield](https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux).
 
 ## Build Guide
 
-Checkout the build-guide for the [https://www.tzcl.me/blog/rae-dux](rae-dux). The main difference is that the MCUs are mounted on the bottom of the PCBs.
+Checkout the build-guide for the [rae-dux](https://www.tzcl.me/blog/rae-dux). The main difference is that the MCUs are mounted on the bottom of the PCBs.
 
 ## Important Notes
 - **Wireless only**, the 36-key diodeless approach uses the P0 pin which is usually dedicated to TRRS
