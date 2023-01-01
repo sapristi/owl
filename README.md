@@ -8,7 +8,7 @@ It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself 
 
 The main difference with the rae-dux is that MX-spacing is used for the keys. This keyboard is also designed with top and bottom plates, so as to protect the MCU and the battery.
 
-**Note**: the top-plate doesn't need the mounting holes, so 
+**Note**: the top-plate doesn't need the mounting holes, so you could remove them from the kicad files.
 
 ## Art
 
@@ -23,6 +23,8 @@ Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware 
 ## Build Guide
 
 Checkout the build-guide for the [rae-dux](https://www.tzcl.me/blog/rae-dux). The main difference is that the MCUs are mounted on the bottom of the PCBs.
+
+A small thing you can change is also to put power switche on different sides of the pcb, so that both are in the same position for on-off.
 
 ## Important Notes
 - **Wireless only**, the 36-key diodeless approach uses the P0 pin which is usually dedicated to TRRS
