@@ -1,15 +1,28 @@
 # The Owl
 
+![the owl](./images/owl mounted.jpg)
 
-The Owl is a 36-key (diodeless!), wireless keyboard, forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux](Architeuthis Dux)).
-I mostly changed the outer form of the keyboard, and added m3 holes so that it can be built with the associated added front and bottom plates.
+The Owl is a 36-key (diodeless!), MX-spaced, wireless keyboard.
 
-*This has now been printed and is working perfectly with ZMK!*
-The ZMK shield can be found [https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux](here), as far as I can tell small custom projects
-like this aren't to be merged into ZMK main, so you'll have to emulate what  my [`zmk-config`](https://github.com/andrewjrae/zmk-config/tree/development/config).
+It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux](Architeuthis Dux)).
+
+The main difference with the rae-dux is that MX-spacing is used for the keys. This keyboard is also designed with top and bottom plates, so as to protect the MCU and the battery.
+
+**Note**: the top-plate doesn't need the mounting holes, so 
+
+## Art
+
+The art for the keyboard is from vecteezy.com:
+ - top was adapted from https://www.vecteezy.com/vector-art/2531138-black-and-white-line-art-of-owl
+ - bottom was adapted from https://www.vecteezy.com/vector-art/3378572-barn-owl-flying-over-black-background
+
+## Firmware
+
+Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware for it, see the [https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux](rae-dux ZMK shield).
 
 ## Build Guide
-The wonderful @tzcl created a [https://www.tzcl.me/blog/rae-dux](build guide) for the rae-dux, so if you are curious about building the board, but don't have experience with this sort of thing go check it out!
+
+Checkout the build-guide for the [https://www.tzcl.me/blog/rae-dux](rae-dux). The main difference is that the MCUs are mounted on the bottom of the PCBs.
 
 ## Important Notes
 - **Wireless only**, the 36-key diodeless approach uses the P0 pin which is usually dedicated to TRRS
@@ -17,4 +30,3 @@ The wonderful @tzcl created a [https://www.tzcl.me/blog/rae-dux](build guide) fo
 - If you want to skip out on the switch, there is no jumper to use the JST
   connector, so you'll have to bodge a wire somewhere, or try shorting the
   switch footprint.
-- Kicad files are 6.0, so unfortunately not backwards compatible.
