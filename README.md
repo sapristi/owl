@@ -1,6 +1,6 @@
 # The Owl
 
-![the owl](./images/owl mounted.jpg)
+![the owl](/images/owl mounted.jpg)
 
 The Owl is a 36-key (diodeless!), MX-spaced, wireless keyboard.
 
