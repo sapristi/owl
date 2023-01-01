@@ -4,7 +4,7 @@
 
 The Owl is a 36-key (diodeless!), MX-spaced, wireless keyboard.
 
-It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux](Architeuthis Dux)).
+It was forked from the [rae-dux](https://github.com/andrewjrae/rae-dux) (itself inspired by the [https://github.com/tapioki/cephalopoda/tree/main/Architeuthis%20dux](Architeuthis Dux) ).
 
 The main difference with the rae-dux is that MX-spacing is used for the keys. This keyboard is also designed with top and bottom plates, so as to protect the MCU and the battery.
 
