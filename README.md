@@ -18,7 +18,9 @@ The art for the keyboard is from vecteezy.com:
 
 ## Firmware
 
-Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware for it, see the [rae-dux ZMK shield](https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux).
+Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware for it, see e.g.
+- [my rae-dux ZMK config](https://github.com/sapristi/zmk-config-rae-dux)
+- the original [rae-dux ZMK shield](https://github.com/andrewjrae/zmk-config/tree/development/config/boards/shields/rae_dux) (note: this is configured to use an older zmk version, with some bugs on mod-tap)
 
 ## Build Guide
 
