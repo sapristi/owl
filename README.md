@@ -24,7 +24,7 @@ Since the keyboard is the same as the rae-dux, you can use the rae-dux firmware 
 
 ## Build Guide
 
-Checkout the build-guide for the [rae-dux](./build_guide/). The main difference is that the MCUs are mounted on the bottom of the PCBs.
+Checkout the build-guide for the [rae-dux](./build_guide/index.md). The main difference is that the MCUs are mounted on the bottom of the PCBs.
 
 A small thing you can change is also to put power switche on different sides of the pcb, so that both are in the same position for on-off.
 
